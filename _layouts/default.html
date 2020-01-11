@@ -26,6 +26,18 @@
           {% if site.github_url %}
             <a href="{{ site.github_url | default: site.github.repository_url }}" target="_blank" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
           {% endif %}
+          {% if site.link0_url %}
+            <a href="{{ site.link0_url }}" target="_blank" class="btn btn-github"><span class="icon"></span>{{ site.link0_title | default: site.link0_url }}</a>
+          {% endif %}
+          {% if site.link1_url %}
+            <a href="{{ site.link1_url }}" target="_blank" class="btn btn-github"><span class="icon"></span>{{ site.link1_title | default: site.link1_url }}</a>
+          {% endif %}
+          {% if site.link2_url %}
+            <a href="{{ site.link2_url }}" target="_blank" class="btn btn-github"><span class="icon"></span>{{ site.link2_title | default: site.link2_url }}</a>
+          {% endif %}
+          {% if site.link3_url %}
+            <a href="{{ site.link3_url }}" target="_blank" class="btn btn-github"><span class="icon"></span>{{ site.link3_title | default: site.link3_url }}</a>
+          {% endif %}
         </section>
       </div>
     </header>
